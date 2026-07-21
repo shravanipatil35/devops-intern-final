@@ -24,3 +24,13 @@ GitHub Actions runs tests →
 Docker container builds →
 Nomad deploys container →
 Logs monitored using Loki
+
+## Docker
+
+Build image:
+
+docker build -t devops-hello .
+
+Run:
+
+docker run devops-hello
