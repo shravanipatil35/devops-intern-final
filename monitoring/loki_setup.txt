@@ -1,0 +1,26 @@
+Grafana Loki Setup
+
+Started Loki using Docker:
+
+docker run -d \
+--name=loki \
+-p 3100:3100 \
+grafana/loki
+
+
+Check Loki:
+
+curl http://localhost:3100/ready
+
+
+View logs:
+
+docker logs loki
+
+
+Loki runs on:
+
+http://localhost:3100
+
+
+Logs can be collected using Promtail.
