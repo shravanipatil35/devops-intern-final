@@ -34,3 +34,5 @@ docker build -t devops-hello .
 Run:
 
 docker run devops-hello
+
+![CI](https://github.com/shravanipatil35/devops-intern-final/actions/workflows/ci.yml/badge.svg)
