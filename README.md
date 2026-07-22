@@ -36,3 +36,38 @@ Run:
 docker run devops-hello
 
 ![CI](https://github.com/shravanipatil35/devops-intern-final/actions/workflows/ci.yml/badge.svg)
+
+## 4. CI/CD with GitHub Actions
+
+A GitHub Actions workflow is configured in:
+
+.github/workflows/ci.yml
+
+### Function:
+- Automatically runs `python hello.py` on every push to the repository.
+
+### Status Badge:
+Already added at the top of this README:
+![CI](https://github.com/shravanipatil35/devops-intern-final/actions/workflows/ci.yml/badge.svg)
+
+### Output:
+- CI pipeline runs successfully on each push
+- Visible in the GitHub **Actions** tab
+
+---
+
+## 5. Job Deployment with Nomad
+
+A Nomad job file is created at:
+
+nomad/hello.nomad
+
+### Features:
+- Uses Docker driver
+- Job type: `service`
+- Minimal CPU and memory allocation
+
+### Run Nomad:
+
+```bash
+nomad agent -dev
